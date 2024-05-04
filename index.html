@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/spotifylogo.png" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <div class="sidebar">
+        <div class="nav">
+          <div class="nav-options" style="opacity: 1">
+            <i class="fa-solid fa-house"></i>
+            <a href="#">Home</a>
+          </div>
+          <div class="nav-options">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <a href="#">Search</a>
+          </div>
+        </div>
+        <div class="library">
+          <div class="library-options">
+            <div class="left">
+              <img src="/assets/library_icon.png" alt="" />
+              <a href="#">Your Library</a>
+            </div>
+            <div class="right">
+              <i class="fa-solid fa-plus plus-icon"></i>
+              <i class="fa-solid fa-arrow-right arrow-icon"></i>
+            </div>
+          </div>
+          <div class="library-boxes">
+            <div class="box">
+              <div class="box-p1">Create your first playlist</div>
+              <div class="box-p2">it's easy, we'll help you</div>
+              <button class="badge">Create playlist</button>
+            </div>
+            <div class="box">
+              <div class="box-p1">Let's find some podcasts to follow</div>
+              <div class="box-p2">We'll keep you updated on new episode</div>
+              <button class="badge">Browse podcasts</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div class="main-content">
+        <!-- Navbar -->
+        <div class="nav-main">
+          <div class="sticky-nav">
+            <div class="main-left">
+              <img src="/assets/backward_icon.png" alt="" />
+              <img src="/assets/forward_icon.png" alt="" />
+            </div>
+            <div class="main-right">
+              <button class="badge">Explore Premium</button>
+              <button class="badge" style="background-color: #fff; color: #000">
+                <i class="fa-regular fa-circle-down"></i> Install App
+              </button>
+              <i class="fa-regular fa-bell main-icon"></i>
+              <i class="fa-regular fa-user main-icon"></i>
+            </div>
+          </div>
+          <div class="sticky-nav2">
+            <span class="span-items active" style="margin-left: 22px">All</span>
+            <span class="span-items">Music</span>
+            <span class="span-items">Podcasts</span>
+          </div>
+        </div>
+        <!-- Cards -->
+        <div class="card-main">
+          <div class="heading">
+            <a class="header" href="#">Recently played</a>
+            <a class="show-all" href="#">Show all</a>
+          </div>
+          <div class="multiple-cards">
+            <div class="card-container">
+              <div class="cards">
+                <img class="card-img" src="/assets/card2img.jpeg" alt="" />
+                <p class="card-head">Mahiye Jinha Sohna</p>
+                <p class="card-info">
+                  Artist - Darshan Raval <br />
+                  Love Songs
+                </p>
+              </div>
+            </div>
+            <!-- 2 -->
+            <div class="card-container">
+              <div class="cards">
+                <img class="card-img" src="/assets/card15.jpeg" alt="" />
+                <p class="card-head">We Rollin</p>
+                <p class="card-info">
+                  Artist - Shubh (Punjabi) <br />
+                  Love Songs
+                </p>
+              </div>
+            </div>
+            <!-- 3 -->
+            <div class="card-container">
+              <div class="cards">
+                <img class="card-img" src="/assets/devadeva.jpeg" alt="" />
+                <p class="card-head">Deva Deva</p>
+                <p class="card-info">
+                  Artist - Arjit Singh<br />
+                  Regional Songs
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="card-main">
+          <div class="heading">
+            <a class="header" href="#">Popular songs</a>
+            <a class="show-all" href="#">Show all</a>
+          </div>
+          <div class="multiple-cards">
+            <!-- 1 -->
+            <div class="card-container">
+              <div class="cards">
+                <img class="card-img" src="/assets/card3img.jpeg" alt="" />
+                <p class="card-head">Mere Pass Tum Ho</p>
+                <p class="card-info">
+                  Artist - Rahet Fateh Ali Khan <br />
+                  Lofi Songs / Love Songs
+                </p>
+              </div>
+            </div>
+            <!-- 2 -->
+            <div class="card-container">
+              <div class="cards">
+                <img class="card-img" src="/assets/card4img.jpeg" alt="" />
+                <p class="card-head">LEO</p>
+                <p class="card-info">
+                  Artist - Aniruddh <br />
+                  Full Album
+                </p>
+              </div>
+            </div>
+            <!-- 3 -->
+            <div class="card-container">
+              <div class="cards">
+                <img class="card-img" src="/assets/kesariya.jpeg" alt="" />
+                <p class="card-head">Kesariya</p>
+                <p class="card-info">
+                  Artist - Arjit Singh <br />
+                  Full Album
+                </p>
+              </div>
+            </div>
+            <!-- 4 -->
+            <div class="card-container">
+              <div class="cards">
+                <img class="card-img" src="/assets/card13.jpeg" alt="" />
+                <p class="card-head">No Love</p>
+                <p class="card-info">
+                  Artist - Shubh (Punjabi) <br />
+                  Love Songs
+                </p>
+              </div>
+            </div>
+            <!-- 5 -->
+            <div class="card-container">
+              <div class="cards">
+                <img class="card-img" src="/assets/card14.jpeg" alt="" />
+                <p class="card-head">Shubh Playlist</p>
+                <p class="card-info">
+                  Artist - Shubh (Punjabi) <br />
+                  Love Songs / Sad Songs
+                </p>
+              </div>
+            </div>
+            <!-- 6 -->
+            <div class="card-container">
+              <div class="cards">
+                <img class="card-img" src="/assets/card16.jpeg" alt="" />
+                <p class="card-head">Apna Bana Le</p>
+                <p class="card-info">
+                  Artist - Arjit Singh <br />
+                  Love Songs
+                </p>
+              </div>
+            </div>
+            <!-- 7  -->
+            <div class="card-container">
+              <div class="cards">
+                <img class="card-img" src="/assets/card17.jpeg" alt="" />
+                <p class="card-head">O Mahi (Dunki)</p>
+                <p class="card-info">
+                  Artist - Arjit Singh <br />
+                  Love Songs
+                </p>
+              </div>
+            </div>
+            <!-- 8  -->
+            <div class="card-container">
+              <div class="cards">
+                <img class="card-img" src="/assets/card18.jpeg" alt="" />
+                <p class="card-head">Tere Hawaale</p>
+                <p class="card-info">
+                  Artist - Arjit Singh <br />
+                  Sad Songs
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="card-main">
+          <div class="heading">
+            <a class="header" href="#">Spotify Trending songs</a>
+            <a class="show-all" href="#">Show all</a>
+          </div>
+          <div class="multiple-cards">
+            <!-- 1 -->
+            <div class="card-container">
+              <div class="cards">
+                <img class="card-img" src="/assets/card19.jpeg" alt="" />
+                <p class="card-head">Heriye</p>
+                <p class="card-info">
+                  Artist - Arjit Singh <br />
+                  Love Songs
+                </p>
+              </div>
+            </div>
+            <!-- 2 -->
+            <div class="card-container">
+              <div class="cards">
+                <img class="card-img" src="/assets/card20.jpeg" alt="" />
+                <p class="card-head">Pritam Playlist</p>
+                <p class="card-info">
+                  Artist - Pritam <br />
+                  Love Songs / Sad Songs
+                </p>
+              </div>
+            </div>
+            <!-- 3 -->
+            <div class="card-container">
+              <div class="cards">
+                <img class="card-img" src="/assets/card2img.jpeg" alt="" />
+                <p class="card-head">Mahiye Jinha Sohna</p>
+                <p class="card-info">
+                  Artist - Darshan Raval <br />
+                  Love Songs
+                </p>
+              </div>
+            </div>
+            <!-- 4 -->
+            <div class="card-container">
+              <div class="cards">
+                <img class="card-img" src="/assets/card4img.jpeg" alt="" />
+                <p class="card-head">LEO</p>
+                <p class="card-info">
+                  Artist - Aniruddh <br />
+                  Full Album
+                </p>
+              </div>
+            </div>
+            <!-- 5 -->
+            <div class="card-container">
+              <div class="cards">
+                <img class="card-img" src="/assets/card18.jpeg" alt="" />
+                <p class="card-head">Tere Hawaale</p>
+                <p class="card-info">
+                  Artist - Arjit Singh <br />
+                  Sad Songs
+                </p>
+              </div>
+            </div>
+            <!-- 6 -->
+            <div class="card-container">
+              <div class="cards">
+                <img class="card-img" src="/assets/card16.jpeg" alt="" />
+                <p class="card-head">Apna Bana Le</p>
+                <p class="card-info">
+                  Artist - Arjit Singh <br />
+                  Love Songs
+                </p>
+              </div>
+            </div>
+            <!-- 7  -->
+            <div class="card-container">
+              <div class="cards">
+                <img class="card-img" src="/assets/card15.jpeg" alt="" />
+                <p class="card-head">We Rollin</p>
+                <p class="card-info">
+                  Artist - Shubh (Punjabi) <br />
+                  Love Songs
+                </p>
+              </div>
+            </div>
+            <!-- 8  -->
+            <div class="card-container">
+              <div class="cards">
+                <img class="card-img" src="/assets/card19.jpeg" alt="" />
+                <p class="card-head">Heriye</p>
+                <p class="card-info">
+                  Artist - Arjit Singh <br />
+                  Love Songs
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="card-main">
+          <div class="heading">
+            <a class="header" href="#">Trending now near You</a>
+            <a class="show-all" href="#">Show all</a>
+          </div>
+          <div class="multiple-cards">
+            <!-- 1 -->
+            <div class="card-container">
+              <div class="cards">
+                <img class="card-img" src="/assets/card11.jpg" alt="" />
+                <p class="card-head">Animal</p>
+                <p class="card-info">
+                  Artist - Arjit Singh <br />
+                  Full Album
+                </p>
+              </div>
+            </div>
+            <!-- 2 -->
+            <div class="card-container">
+              <div class="cards">
+                <img class="card-img" src="/assets/card4img.jpeg" alt="" />
+                <p class="card-head">LEO</p>
+                <p class="card-info">
+                  Artist - Aniruddh <br />
+                  Full Album
+                </p>
+              </div>
+            </div>
+            <!-- 3 -->
+            <div class="card-container">
+              <div class="cards">
+                <img class="card-img" src="/assets/card12.jpeg" alt="" />
+                <p class="card-head">No Love</p>
+                <p class="card-info">
+                  Artist - Shubh (Punjabi)<br />
+                  Love Songs / Sad Songs
+                </p>
+              </div>
+            </div>
+            <!-- 4 -->
+            <div class="card-container">
+              <div class="cards">
+                <img class="card-img" src="/assets/card13.jpeg" alt="" />
+                <p class="card-head">One Love</p>
+                <p class="card-info">
+                  Artist - Shubh (Punjabi) <br />
+                  Love Songs
+                </p>
+              </div>
+            </div>
+            <!-- 5 -->
+            <div class="card-container">
+              <div class="cards">
+                <img class="card-img" src="/assets/card16.jpeg" alt="" />
+                <p class="card-head">Apna Bana Le</p>
+                <p class="card-info">
+                  Artist - Arjit Singh <br />
+                  Love Songs
+                </p>
+              </div>
+            </div>
+            <!-- 6 -->
+            <div class="card-container">
+              <div class="cards">
+                <img class="card-img" src="/assets/card14.jpeg" alt="" />
+                <p class="card-head">Shubh Playlist</p>
+                <p class="card-info">
+                  Artist - Shubh (Punjabi) <br />
+                  Love Songs / Sad Songs
+                </p>
+              </div>
+            </div>
+            <!-- 7  -->
+            <div class="card-container">
+              <div class="cards">
+                <img class="card-img" src="/assets/card15.jpeg" alt="" />
+                <p class="card-head">Still Rollin</p>
+                <p class="card-info">
+                  Artist - Shubh (Punjabi) <br />
+                  Love Songs
+                </p>
+              </div>
+            </div>
+            <!-- 8  -->
+            <div class="card-container">
+              <div class="cards">
+                <img class="card-img" src="/assets/card19.jpeg" alt="" />
+                <p class="card-head">Heriye</p>
+                <p class="card-info">
+                  Artist - Arjit Singh <br />
+                  Love Songs
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="card-main">
+          <div class="heading">
+            <a class="header" href="#">Playlist Made for You</a>
+            <a class="show-all" href="#">Show all</a>
+          </div>
+          <div class="multiple-cards">
+            <!-- 1 -->
+            <div class="card-container">
+              <div class="cards">
+                <img class="card-img" src="/assets/card20.jpeg" alt="" />
+                <p class="card-head">Pritam PLayLists</p>
+                <p class="card-info">Artist - Pritam Love Song</p>
+              </div>
+            </div>
+            <!-- 2 -->
+            <div class="card-container">
+              <div class="cards">
+                <img class="card-img" src="/assets/card5img.jpeg" alt="" />
+                <p class="card-head">Top Songs Global</p>
+                <p class="card-info">
+                  Weekly Music Charts... <br />
+                  Love Songs / Sad Songs
+                </p>
+              </div>
+            </div>
+            <!-- 3 -->
+            <div class="card-container">
+              <div class="cards">
+                <img class="card-img" src="/assets/card6img.jpeg" alt="" />
+                <p class="card-head">Top Song India</p>
+                <p class="card-info">
+                  Weekly Music Charts... <br />
+                  Love Songs / Sad Songs
+                </p>
+              </div>
+            </div>
+            <!-- 4 -->
+            <div class="card-container">
+              <div class="cards">
+                <img class="card-img" src="/assets/card1img.jpeg" alt="" />
+                <p class="card-head">Top 50 Global</p>
+                <p class="card-info">
+                  Your daily update of the most played tracks...
+                </p>
+              </div>
+            </div>
+            <!-- 5 -->
+            <div class="card-container">
+              <div class="cards">
+                <img class="card-img" src="/assets/card6img.jpeg" alt="" />
+                <p class="card-head">Top Song India</p>
+                <p class="card-info">
+                  Weekly Music Charts... <br />
+                  Love Songs / Sad Songs
+                </p>
+              </div>
+            </div>
+            <!-- 6 -->
+            <div class="card-container">
+              <div class="cards">
+                <img class="card-img" src="/assets/card1img.jpeg" alt="" />
+                <p class="card-head">Top 50 Global</p>
+                <p class="card-info">
+                  Your daily update of the most played tracks...
+                </p>
+              </div>
+            </div>
+            <!-- 7  -->
+            <div class="card-container">
+              <div class="cards">
+                <img class="card-img" src="/assets/card20.jpeg" alt="" />
+                <p class="card-head">Pritam PLayLists</p>
+                <p class="card-info">Artist - Pritam Love Song</p>
+              </div>
+            </div>
+            <!-- 8  -->
+            <div class="card-container">
+              <div class="cards">
+                <img class="card-img" src="/assets/card5img.jpeg" alt="" />
+                <p class="card-head">Top Songs Global</p>
+                <p class="card-info">
+                  Weekly Music Charts... <br />
+                  Love Songs / Sad Songs
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 6 -->
+        <div class="card-main">
+          <div class="heading">
+            <a class="header" href="#">Popular Albums</a>
+            <a class="show-all" href="#">Show all</a>
+          </div>
+          <div class="multiple-cards">
+            <!-- 1 -->
+            <div class="card-container">
+              <div class="cards">
+                <img class="card-img" src="/assets/card2img.jpeg" alt="" />
+                <p class="card-head">Mahiye Jinha Sohna</p>
+                <p class="card-info">
+                  Artist - Arjit Singh <br />
+                  Love Songs
+                </p>
+              </div>
+            </div>
+            <!-- 2 -->
+            <div class="card-container">
+              <div class="cards">
+                <img class="card-img" src="/assets/card19.jpeg" alt="" />
+                <p class="card-head">Heriye</p>
+                <p class="card-info">
+                  Artist - Arjit Singh <br />
+                  Love Songs
+                </p>
+              </div>
+            </div>
+            <!-- 3 -->
+            <div class="card-container">
+              <div class="cards">
+                <img class="card-img" src="/assets/card15.jpeg" alt="" />
+                <p class="card-head">We Rollin</p>
+                <p class="card-info">
+                  Artist - Shubh <br />
+                  Love Songs
+                </p>
+              </div>
+            </div>
+            <!-- 4 -->
+            <div class="card-container">
+              <div class="cards">
+                <img class="card-img" src="/assets/card14.jpeg" alt="" />
+                <p class="card-head">Shubh JukeBox</p>
+                <p class="card-info">
+                  Artist - Shubh <br />
+                  Love Songs
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 7 -->
+          <div class="card-main">
+            <div class="heading">
+              <a class="header" href="#">Made For you</a>
+              <a class="show-all" href="#">Show all</a>
+            </div>
+            <div class="multiple-cards">
+              <!-- 1 -->
+              <div class="card-container">
+                <div class="cards">
+                  <img class="card-img" src="/assets/card12.jpeg" alt="" />
+                  <p class="card-head">No Love</p>
+                  <p class="card-info">
+                    Artist - Shubh <br />
+                    Love Songs
+                  </p>
+                </div>
+              </div>
+              <!-- 2 -->
+              <div class="card-container">
+                <div class="cards">
+                  <img class="card-img" src="/assets/card13.jpeg" alt="" />
+                  <p class="card-head">One Love</p>
+                  <p class="card-info">
+                    Artist - Shubh <br />
+                    Love Songs
+                  </p>
+                </div>
+              </div>
+              <!-- 3 -->
+              <div class="card-container">
+                <div class="cards">
+                  <img class="card-img" src="/assets/card17.jpeg" alt="" />
+                  <p class="card-head">O Mahi (Dunki)</p>
+                  <p class="card-info">
+                    Artist - Arjit Singh <br />
+                    Love Songs
+                  </p>
+                </div>
+              </div>
+              <!-- 4 -->
+              <div class="card-container">
+                <div class="cards">
+                  <img class="card-img" src="/assets/card19.jpeg" alt="" />
+                  <p class="card-head">Heriye</p>
+                  <p class="card-info">
+                    Artist - Arjit Singh <br />
+                    Love Songs
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- footer -->
+        <div class="footer-top">
+          <div class="left-foot">
+            <div class="company">
+              <span class="food-cont-main">Company</span>
+              <span class="foot-cont">About</span>
+              <span class="foot-cont">Jobs</span>
+              <span class="foot-cont">About</span>
+            </div>
+            <div class="company">
+              <span class="food-cont-main">Communities</span>
+              <span class="foot-cont">For Artists</span>
+              <span class="foot-cont">Developers</span>
+              <span class="foot-cont">Advertising</span>
+              <span class="foot-cont">Investors</span>
+              <span class="foot-cont">Vendors</span>
+            </div>
+            <div class="company">
+              <span class="food-cont-main">Useful Links</span>
+              <span class="foot-cont">Support</span>
+              <span class="foot-cont">Free Mobile App</span>
+            </div>
+            <div class="company">
+              <span class="food-cont-main">Spotify Plans</span>
+              <span class="foot-cont">Premium Individual</span>
+              <span class="foot-cont">Premium Duo</span>
+              <span class="foot-cont">Premium Family</span>
+              <span class="foot-cont">Premium Student</span>
+              <span class="foot-cont">Spotify Free</span>
+            </div>
+          </div>
+          <div class="right-foot">
+            <div class="logos">
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-x-twitter"></i>
+              <i class="fa-brands fa-facebook"></i>
+            </div>
+          </div>
+        </div>
+        <div class="footer-line">
+          <div class="line"></div>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-left">
+            <span class="foot-text">Legal</span>
+            <span class="foot-text">Safety & Privacy Center</span>
+            <span class="foot-text">Privacy Policy</span>
+            <span class="foot-text">Cookies</span>
+            <span class="foot-text">About Ads</span>
+            <span class="foot-text">Accessibility</span>
+          </div>
+          <div class="footer-right">
+            <span class="foot-text-right">&copy; 2024 Spotify AB</span>
+          </div>
+        </div>
+      </div>
+      <div class="music-player">
+        <div class="album">
+          <div class="album-left">
+            <img src="/assets/card13.jpeg" alt="" class="album-main-img" />
+            <div class="album-text">
+              <span class="album-head">One Love</span>
+              <span class="album-para">Shubh Music Production</span>
+            </div>
+          </div>
+          <div class="album-right">
+            <i class="fa-solid fa-heart album-icon"></i>
+            <i class="fa-solid fa-volume-xmark album-icon"></i>
+          </div>
+        </div>
+        <div class="player">
+          <div class="player-controls">
+            <img src="/assets/player_icon1.png" alt="" class="playback-icons" />
+            <img src="/assets/player_icon2.png" alt="" class="playback-icons" />
+            <img src="/assets/player_icon3.png" alt="" class="playback-icons" />
+            <img src="/assets/player_icon4.png" alt="" class="playback-icons" />
+            <img src="/assets/player_icon5.png" alt="" class="playback-icons" />
+          </div>
+          <div class="playback-bar" style="margin-top: 4px">
+            <span class="curr-time">00:00</span>
+            <input
+              type="range"
+              min="0"
+              max="100"
+              class="progress-bar"
+              step="1"
+            />
+            <span class="end-time">03:49</span>
+            <span></span>
+          </div>
+        </div>
+        <div class="controls">
+          <div class="right-icons">
+            <img
+              src="/assets/controls_icon1.png"
+              class="right-album-icon"
+              alt=""
+            />
+            <img
+              src="/assets/controld_icon2.png"
+              class="right-album-icon"
+              alt=""
+            />
+            <img
+              src="/assets/controls_icon3.png"
+              class="right-album-icon"
+              style="height: 21px"
+              alt=""
+            />
+            <img
+              src="/assets/controls_icon4.png"
+              class="right-album-icon"
+              style="height: 16px"
+              alt=""
+            />
+            <img
+              src="/assets/controls_icon5.png"
+              class="right-album-icon"
+              style="height: 39px"
+              alt=""
+            />
+            <input
+              type="range"
+              min="0"
+              max="99"
+              step="1"
+              class="control-volume-bar"
+            />
+            <img
+              src="/assets/full-screen (1).png"
+              class="right-album-icon"
+              style="height: 17px"
+              alt=""
+            />
+            <img
+              src="/assets/full-screen (2).png"
+              class="right-album-icon"
+              style="height: 15px"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
